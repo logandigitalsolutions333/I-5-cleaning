@@ -12,19 +12,20 @@
 --light:#f8f8f8;
 }
 
-*{margin:0;padding:0;box-sizing:border-box;font-family: 'Segoe UI', sans-serif}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
 body{color:#222;background:#fff;line-height:1.6}
 
+/* HEADER */
 header{
-position:sticky;top:0;
+position:sticky;
+top:0;
 background:#fff;
-display:flex;justify-content:space-between;align-items:center;
+display:flex;
+justify-content:flex-end;
 padding:15px 25px;
 border-bottom:1px solid #eee;
 z-index:1000;
 }
-
-.logo img{height:45px}
 
 .cta-btn{
 background:var(--gold);
@@ -34,14 +35,20 @@ border-radius:6px;
 font-weight:600;
 }
 
+/* HERO */
 .hero{
-padding:80px 20px;
+padding:100px 20px 60px;
 text-align:center;
 background:#fafafa;
 }
 
+.hero img{
+max-width:220px;
+margin-bottom:25px;
+}
+
 .hero h1{
-font-size:40px;
+font-size:38px;
 color:var(--dark);
 margin-bottom:15px;
 }
@@ -50,6 +57,9 @@ margin-bottom:15px;
 font-size:18px;
 color:#555;
 margin-bottom:25px;
+max-width:600px;
+margin-left:auto;
+margin-right:auto;
 }
 
 .buttons a{
@@ -63,6 +73,7 @@ display:inline-block;
 .call{background:var(--gold);color:#fff}
 .quote{border:2px solid var(--gold);color:var(--gold)}
 
+/* SECTIONS */
 .section{
 padding:60px 20px;
 max-width:1100px;
@@ -103,18 +114,7 @@ padding:20px;
 border-left:4px solid var(--gold);
 }
 
-.reviews{
-display:grid;
-gap:20px;
-}
-.review{
-border:1px solid #eee;
-padding:20px;
-border-radius:8px;
-font-style:italic;
-background:#fff;
-}
-
+/* FOOTER */
 footer{
 background:var(--dark);
 color:#fff;
@@ -122,6 +122,7 @@ padding:40px 20px;
 text-align:center;
 }
 
+/* FLOATING BUTTON */
 .call-btn{
 position:fixed;
 bottom:20px;
@@ -135,10 +136,9 @@ box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
 
 @media(min-width:768px){
-.hero h1{font-size:50px}
+.hero h1{font-size:48px}
 .services{grid-template-columns:1fr 1fr}
 .why{grid-template-columns:1fr 1fr}
-.reviews{grid-template-columns:1fr 1fr}
 }
 </style>
 </head>
@@ -146,15 +146,15 @@ box-shadow:0 5px 15px rgba(0,0,0,0.3);
 <body>
 
 <header>
-<div class="logo">
-<img src="logo.png" alt="I-5 Cleaning Logo">
-</div>
 <a href="tel:15551234567" class="cta-btn">Call Now</a>
 </header>
 
 <section class="hero">
+<img src="IMG_9101.jpeg" alt="I-5 Cleaning Logo">
+
 <h1>Premium Cleaning Services in Longview, WA</h1>
-<p>High-end, detail-focused cleaning for homes and businesses along the I-5 corridor — from Castle Rock to Kalama.</p>
+
+<p>Detail-focused, high-standard cleaning for homes and businesses along the I-5 corridor — from Castle Rock to Kalama.</p>
 
 <div class="buttons">
 <a href="tel:15551234567" class="call">Call Now</a>
@@ -165,10 +165,10 @@ box-shadow:0 5px 15px rgba(0,0,0,0.3);
 <section class="section">
 <h2>Our Services</h2>
 <div class="services">
-<div class="service">Recurring Home Cleaning (Weekly, Bi-Weekly, Monthly)</div>
+<div class="service">Recurring Cleaning (Weekly, Bi-Weekly, Monthly)</div>
 <div class="service">Deep Cleaning & First-Time Cleans</div>
 <div class="service">Move-In / Move-Out Cleaning</div>
-<div class="service">Vacation Rental & Airbnb Turnovers</div>
+<div class="service">Vacation Rental Turnovers (Airbnb / VRBO)</div>
 <div class="service">Post-Construction & New Build Cleaning</div>
 <div class="service">Office & Commercial Cleaning</div>
 <div class="service">Interior Window Cleaning</div>
@@ -179,36 +179,26 @@ box-shadow:0 5px 15px rgba(0,0,0,0.3);
 <section class="section">
 <h2>Why Choose I-5 Cleaning</h2>
 <div class="why">
-<div><strong>Luxury-Level Detail</strong><br>We clean beyond the surface — every corner, every time.</div>
-<div><strong>Fast & Reliable</strong><br>Quick response times and consistent scheduling.</div>
-<div><strong>Flexible Scheduling</strong><br>We work around your life, not the other way around.</div>
-<div><strong>Locally Focused</strong><br>Proudly serving Longview and the I-5 corridor communities.</div>
+<div><strong>High-End Results</strong><br>We focus on detail and consistency, not rushing through jobs.</div>
+<div><strong>Reliable & Responsive</strong><br>Quick communication and dependable scheduling.</div>
+<div><strong>Flexible Scheduling</strong><br>We work around your needs and availability.</div>
+<div><strong>Locally Focused</strong><br>Serving Longview and nearby I-5 corridor communities.</div>
 </div>
 </section>
 
 <section class="section">
-<h2>Client Experience</h2>
-<div class="reviews">
-<div class="review">“My home looked better than when I moved in. Super professional and easy to work with.”</div>
-<div class="review">“Booked a deep clean and was blown away. Worth every penny.”</div>
-<div class="review">“Reliable, on time, and very detail-oriented. Highly recommend.”</div>
-<div class="review">“Perfect for our rental turnovers — consistent and stress-free.”</div>
-</div>
-</section>
-
-<section class="section">
-<h2>About Us</h2>
-<p>I-5 Cleaning was built on one simple principle — deliver a higher standard of clean. We’re a modern, locally focused company that prioritizes reliability, communication, and attention to detail. Whether it’s a routine clean or a full deep service, we treat every space like it matters.</p>
+<h2>About I-5 Cleaning</h2>
+<p>I-5 Cleaning was built to deliver a higher standard of clean. We’re a modern, locally focused company that values reliability, communication, and attention to detail. Every job is treated with care — because your space matters.</p>
 </section>
 
 <section class="section">
 <h2>Service Area</h2>
-<p>Based in Longview, Washington, we serve homes and businesses along the I-5 corridor, including:</p>
+<p>Based in Longview, Washington, we serve:</p>
 <ul>
 <li>Longview</li>
 <li>Castle Rock</li>
 <li>Kalama</li>
-<li>Surrounding communities</li>
+<li>Nearby I-5 corridor areas</li>
 </ul>
 </section>
 
