@@ -15,30 +15,12 @@
 }
 
 *{margin:0;padding:0;box-sizing:border-box}
+
 body{
 font-family:'Inter', sans-serif;
 color:#222;
 background:#fff;
 line-height:1.6;
-}
-
-/* HEADER */
-header{
-position:sticky;top:0;
-background:#fff;
-display:flex;
-justify-content:flex-end;
-padding:15px 25px;
-border-bottom:1px solid #eee;
-z-index:1000;
-}
-
-.cta-btn{
-background:var(--gold);
-color:#fff;
-padding:10px 18px;
-border-radius:6px;
-font-weight:600;
 }
 
 /* HERO */
@@ -76,10 +58,18 @@ padding:14px 22px;
 border-radius:6px;
 font-weight:500;
 display:inline-block;
+text-decoration:none;
 }
 
-.call{background:var(--gold);color:#fff}
-.text{border:2px solid var(--gold);color:var(--gold)}
+.call{
+background:var(--gold);
+color:#fff;
+}
+
+.text{
+border:2px solid var(--gold);
+color:var(--gold);
+}
 
 /* SECTIONS */
 .section{
@@ -108,6 +98,7 @@ border-radius:8px;
 background:#fff;
 transition:.2s;
 }
+
 .service:hover{
 border-color:var(--gold);
 transform:translateY(-3px);
@@ -170,88 +161,167 @@ padding:15px 20px;
 border-radius:50px;
 font-weight:bold;
 box-shadow:0 5px 15px rgba(0,0,0,0.3);
+text-decoration:none;
 }
 
 @media(min-width:768px){
-.hero h1{font-size:56px}
-.services{grid-template-columns:1fr 1fr}
-.why{grid-template-columns:1fr 1fr}
-.pricing{grid-template-columns:1fr 1fr}
+.hero h1{
+font-size:56px;
+}
+
+.services{
+grid-template-columns:1fr 1fr;
+}
+
+.why{
+grid-template-columns:1fr 1fr;
+}
+
+.pricing{
+grid-template-columns:1fr 1fr;
+}
 }
 </style>
 </head>
 
 <body>
 
-<header>
-<a href="sms:13608463327?body=Hi%2C%20I%E2%80%99m%20interested%20in%20your%20cleaning%20services%20and%20would%20like%20a%20quote." class="cta-btn">Text Now</a>
-</header>
-
 <section class="hero">
+
 <img src="IMG_9101.jpeg" alt="I-5 Cleaning Logo">
 
 <h1>Same Crew. Every Visit. Spotless Every Time.</h1>
 
-<p>Locally owned cleaning services for homes, rentals, and businesses in Longview, Kelso, and surrounding areas.</p>
+<p>
+Locally owned cleaning services for homes, rentals, and businesses in Longview, Kelso, and surrounding areas.
+</p>
 
 <div class="buttons">
 <a href="tel:13608463327" class="call">Call Now</a>
-<a href="sms:13608463327?body=Hi%2C%20I%E2%80%99m%20interested%20in%20your%20cleaning%20services%20and%20would%20like%20a%20quote." class="text">Text Now</a>
-</div>
-</section>
 
-<!-- KEEPING REST SAME -->
+<a href="sms:13608463327?body=Hi%2C%20I%E2%80%99m%20interested%20in%20your%20cleaning%20services%20and%20would%20like%20a%20quote." class="text">
+Text Now
+</a>
+</div>
+
+</section>
 
 <section class="section">
 <h2>Our Services</h2>
+
 <div class="services">
 <div class="service">Recurring Cleaning (Weekly, Bi-Weekly, Monthly)</div>
+
 <div class="service">Deep Cleaning & First-Time Cleans</div>
+
 <div class="service">Move-In / Move-Out Cleaning</div>
+
 <div class="service">Vacation Rental Turnovers (Airbnb / VRBO)</div>
+
 <div class="service">Post-Construction & New Build Cleaning</div>
+
 <div class="service">Post-Renovation Cleaning</div>
+
 <div class="service">Pre-Sale Cleaning</div>
+
 <div class="service">Spring / Seasonal Cleaning</div>
+
 <div class="service">Post-Party / Event Cleaning</div>
+
 <div class="service">Restaurant Deep Cleaning</div>
+
 <div class="service">Office & Commercial Cleaning</div>
+
 <div class="service">Interior Window Cleaning</div>
+
 <div class="service">Oven, Fridge & Cabinet Add-Ons</div>
 </div>
 </section>
 
 <section class="section">
 <h2>Pricing</h2>
+
 <div class="pricing">
-<div class="price-card"><strong>Recurring Cleans</strong><div class="price">Starting at $145</div></div>
-<div class="price-card"><strong>First-Time & Deep Cleans</strong><div class="price">Starting at $325</div></div>
-<div class="price-card"><strong>Move-In / Move-Out</strong><div class="price">Starting at $325</div></div>
-<div class="price-card"><strong>Vacation Rental Turnovers</strong><div class="price">Starting at $175</div></div>
-<div class="price-card"><strong>Commercial Spaces</strong><div class="price">Starting at $120</div></div>
+
+<div class="price-card">
+<strong>Recurring Cleans</strong>
+<div class="price">Starting at $145</div>
 </div>
-<p style="text-align:center;margin-top:25px;color:#555;">All quotes are free. We respond fast.</p>
+
+<div class="price-card">
+<strong>First-Time & Deep Cleans</strong>
+<div class="price">Starting at $325</div>
+</div>
+
+<div class="price-card">
+<strong>Move-In / Move-Out</strong>
+<div class="price">Starting at $325</div>
+</div>
+
+<div class="price-card">
+<strong>Vacation Rental Turnovers</strong>
+<div class="price">Starting at $175</div>
+</div>
+
+<div class="price-card">
+<strong>Commercial Spaces</strong>
+<div class="price">Starting at $120</div>
+</div>
+
+</div>
+
+<p style="text-align:center;margin-top:25px;color:#555;">
+All quotes are free. We respond fast.
+</p>
 </section>
 
 <section class="section">
 <h2>Why Choose I-5 Cleaning</h2>
+
 <div class="why">
-<div><strong>Same Crew Every Visit</strong><br>No strangers through your door. Familiar faces who know your home and your standards.</div>
-<div><strong>Licensed, Bonded & Insured</strong><br>Full protection for you and your home — every single time.</div>
-<div><strong>We Show Up</strong><br>On time, every time. And if something isn’t right we come back and fix it — no questions asked.</div>
-<div><strong>Locally Owned</strong><br>Not a franchise. Not a call center. You get us directly — a real local business that actually cares.</div>
+
+<div>
+<strong>Same Crew Every Visit</strong><br>
+No strangers through your door. Familiar faces who know your home and your standards.
+</div>
+
+<div>
+<strong>Licensed, Bonded & Insured</strong><br>
+Full protection for you and your home — every single time.
+</div>
+
+<div>
+<strong>We Show Up</strong><br>
+On time, every time. And if something isn’t right we come back and fix it — no questions asked.
+</div>
+
+<div>
+<strong>Locally Owned</strong><br>
+Not a franchise. Not a call center. You get us directly — a real local business that actually cares.
+</div>
+
 </div>
 </section>
 
 <section class="section">
 <h2>About I-5 Cleaning</h2>
-<p>I-5 Cleaning is a locally owned and operated cleaning company based right here in Longview...</p>
+
+<p>
+I-5 Cleaning is a locally owned and operated cleaning company based right here in Longview. We provide reliable, detail-focused cleaning services for homes, rentals, offices, and commercial spaces throughout the surrounding areas.
+</p>
 </section>
 
 <section class="section">
 <h2>Contact</h2>
-<p><strong>Call:</strong> <a href="tel:13608228539">(360) 822-8539</a><br>
-<strong>Email:</strong> <a href="mailto:Gunner@I5Cleaning.com">Gunner@I5Cleaning.com</a></p>
+
+<p>
+<strong>Call:</strong>
+<a href="tel:13608228539">(360) 822-8539</a>
+<br><br>
+
+<strong>Email:</strong>
+<a href="mailto:Gunner@I5Cleaning.com">Gunner@I5Cleaning.com</a>
+</p>
 </section>
 
 <footer>
@@ -259,7 +329,9 @@ box-shadow:0 5px 15px rgba(0,0,0,0.3);
 <p>Clean Spaces. High Standards.</p>
 </footer>
 
-<a href="sms:13608463327?body=Hi%2C%20I%E2%80%99m%20interested%20in%20your%20cleaning%20services%20and%20would%20like%20a%20quote." class="text-btn">Text Now</a>
+<a href="sms:13608463327?body=Hi%2C%20I%E2%80%99m%20interested%20in%20your%20cleaning%20services%20and%20would%20like%20a%20quote." class="text-btn">
+Text Now
+</a>
 
 </body>
 </html>
