@@ -3,18 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>I-5 Cleaning | Longview WA Cleaning Services</title>
+
+<title>I-5 Cleaning | Professional Cleaning in Cowlitz County</title>
 
 <!-- LUXURY FONT -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 :root{
 --gold:#c5a46d;
 --dark:#111;
+--light:#fafafa;
 }
 
-*{margin:0;padding:0;box-sizing:border-box}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
 
 body{
 font-family:'Inter', sans-serif;
@@ -24,8 +35,9 @@ line-height:1.6;
 }
 
 /* HERO */
+
 .hero{
-padding:100px 20px 60px;
+padding:100px 20px 70px;
 text-align:center;
 background:#fafafa;
 }
@@ -44,21 +56,41 @@ letter-spacing:0.5px;
 }
 
 .hero p{
-font-size:18px;
+font-size:20px;
 color:#555;
-margin-bottom:25px;
-max-width:650px;
+margin-bottom:30px;
+max-width:750px;
 margin-left:auto;
 margin-right:auto;
 }
 
+.phone-big{
+display:block;
+font-size:34px;
+font-weight:700;
+text-decoration:none;
+color:var(--dark);
+margin-bottom:25px;
+}
+
+.buttons{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:12px;
+}
+
 .buttons a{
-margin:5px;
-padding:14px 22px;
+padding:15px 24px;
 border-radius:6px;
-font-weight:500;
+font-weight:600;
 display:inline-block;
 text-decoration:none;
+transition:.2s;
+}
+
+.buttons a:hover{
+transform:translateY(-2px);
 }
 
 .call{
@@ -71,9 +103,30 @@ border:2px solid var(--gold);
 color:var(--gold);
 }
 
+.quote{
+background:var(--dark);
+color:#fff;
+}
+
+/* GOOGLE REVIEWS */
+
+.review-banner{
+background:var(--dark);
+padding:18px 20px;
+text-align:center;
+}
+
+.review-banner a{
+color:#fff;
+text-decoration:none;
+font-weight:600;
+font-size:17px;
+}
+
 /* SECTIONS */
+
 .section{
-padding:60px 20px;
+padding:70px 20px;
 max-width:1100px;
 margin:auto;
 }
@@ -81,10 +134,35 @@ margin:auto;
 .section h2{
 font-family:'Playfair Display', serif;
 text-align:center;
-font-size:30px;
-margin-bottom:30px;
+font-size:34px;
+margin-bottom:35px;
 color:var(--dark);
 }
+
+/* CONTRACTOR SECTION */
+
+.contractors{
+display:grid;
+gap:20px;
+}
+
+.contractor-box{
+background:var(--light);
+padding:24px;
+border-left:4px solid var(--gold);
+border-radius:6px;
+}
+
+.contractor-box ul{
+padding-left:20px;
+margin-top:10px;
+}
+
+.contractor-box li{
+margin-bottom:10px;
+}
+
+/* SERVICES */
 
 .services{
 display:grid;
@@ -93,16 +171,19 @@ gap:20px;
 
 .service{
 border:1px solid #eee;
-padding:20px;
+padding:22px;
 border-radius:8px;
 background:#fff;
 transition:.2s;
+font-weight:500;
 }
 
 .service:hover{
 border-color:var(--gold);
 transform:translateY(-3px);
 }
+
+/* WHY */
 
 .why{
 display:grid;
@@ -111,11 +192,13 @@ gap:20px;
 
 .why div{
 background:#fafafa;
-padding:20px;
+padding:24px;
 border-left:4px solid var(--gold);
+border-radius:6px;
 }
 
 /* PRICING */
+
 .pricing{
 display:grid;
 gap:20px;
@@ -123,7 +206,7 @@ gap:20px;
 
 .price-card{
 border:1px solid #eee;
-padding:20px;
+padding:24px;
 border-radius:8px;
 background:#fff;
 text-align:center;
@@ -136,13 +219,36 @@ transform:translateY(-3px);
 }
 
 .price{
-font-size:26px;
+font-size:28px;
 font-weight:bold;
 color:var(--gold);
 margin-top:10px;
 }
 
+/* CONTACT */
+
+.contact-box{
+text-align:center;
+font-size:18px;
+}
+
+.contact-box a{
+color:var(--gold);
+font-weight:600;
+text-decoration:none;
+}
+
+.contact-phone{
+display:block;
+font-size:36px;
+font-weight:700;
+margin:20px 0;
+color:var(--dark);
+text-decoration:none;
+}
+
 /* FOOTER */
+
 footer{
 background:var(--dark);
 color:#fff;
@@ -151,22 +257,62 @@ text-align:center;
 }
 
 /* FLOATING BUTTON */
+
 .text-btn{
 position:fixed;
 bottom:20px;
 right:20px;
 background:var(--gold);
 color:#fff;
-padding:15px 20px;
+padding:15px 22px;
 border-radius:50px;
 font-weight:bold;
 box-shadow:0 5px 15px rgba(0,0,0,0.3);
 text-decoration:none;
+z-index:999;
 }
 
+/* FORM */
+
+.contact-form{
+max-width:700px;
+margin:auto;
+}
+
+.contact-form input,
+.contact-form textarea{
+width:100%;
+padding:14px;
+margin-bottom:15px;
+border:1px solid #ddd;
+border-radius:6px;
+font-family:'Inter', sans-serif;
+font-size:16px;
+}
+
+.contact-form textarea{
+min-height:140px;
+resize:vertical;
+}
+
+.contact-form button{
+background:var(--gold);
+color:#fff;
+border:none;
+padding:15px 24px;
+font-size:16px;
+font-weight:600;
+border-radius:6px;
+cursor:pointer;
+width:100%;
+}
+
+/* MOBILE */
+
 @media(min-width:768px){
+
 .hero h1{
-font-size:56px;
+font-size:60px;
 }
 
 .services{
@@ -180,65 +326,158 @@ grid-template-columns:1fr 1fr;
 .pricing{
 grid-template-columns:1fr 1fr;
 }
+
+.contractors{
+grid-template-columns:1fr;
 }
+
+}
+
 </style>
 </head>
 
 <body>
 
+<!-- HERO -->
+
 <section class="hero">
 
 <img src="IMG_9101.jpeg" alt="I-5 Cleaning Logo">
 
-<h1>Same Crew. Every Visit. Spotless Every Time.</h1>
+<h1>Professional Cleaning in Cowlitz County</h1>
 
 <p>
-Locally owned cleaning services for homes, rentals, and businesses in Longview, Kelso, and surrounding areas.
+Post-Construction, Commercial & Residential Cleaning | Same Crew Every Visit
 </p>
 
-<div class="buttons">
-<a href="tel:13608463327" class="call">Call Now</a>
+<a href="tel:13608228539" class="phone-big">(360) 822-8539</a>
 
-<a href="sms:13608463327?body=Hi%2C%20I%E2%80%99m%20interested%20in%20your%20cleaning%20services%20and%20would%20like%20a%20quote." class="text">
+<div class="buttons">
+
+<a href="#quote-form" class="quote">
+Get a Fast Quote
+</a>
+
+<a href="tel:13608228539" class="call">
+Call Now
+</a>
+
+<a href="sms:13608228539?body=Hi%2C%20I%E2%80%99m%20interested%20in%20your%20cleaning%20services%20and%20would%20like%20a%20quote." class="text">
 Text Now
+</a>
+
+</div>
+
+</section>
+
+<!-- GOOGLE REVIEWS -->
+
+<div class="review-banner">
+<a href="PASTE_GOOGLE_REVIEW_LINK_HERE" target="_blank">
+⭐ Read Our Google Reviews
 </a>
 </div>
 
-</section>
+<!-- FOR CONTRACTORS -->
 
 <section class="section">
+
+<h2>For Contractors</h2>
+
+<div class="contractors">
+
+<div class="contractor-box">
+
+<p>
+We work with general contractors, builders, and project managers throughout Cowlitz County for reliable post-construction and renovation cleaning.
+</p>
+
+<ul>
+<li>Flexible scheduling for active jobsites & final walkthroughs</li>
+
+<li>Fast turnaround for deadlines and inspections</li>
+
+<li>Licensed, bonded & insured</li>
+
+<li>Experienced around construction environments and trades</li>
+
+<li>Reliable communication and consistent crews</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section class="section">
+
 <h2>Our Services</h2>
 
 <div class="services">
-<div class="service">Recurring Cleaning (Weekly, Bi-Weekly, Monthly)</div>
 
-<div class="service">Deep Cleaning & First-Time Cleans</div>
-
-<div class="service">Move-In / Move-Out Cleaning</div>
-
-<div class="service">Vacation Rental Turnovers (Airbnb / VRBO)</div>
-
-<div class="service">Post-Construction & New Build Cleaning</div>
-
-<div class="service">Post-Renovation Cleaning</div>
-
-<div class="service">Pre-Sale Cleaning</div>
-
-<div class="service">Spring / Seasonal Cleaning</div>
-
-<div class="service">Post-Party / Event Cleaning</div>
-
-<div class="service">Restaurant Deep Cleaning</div>
-
-<div class="service">Office & Commercial Cleaning</div>
-
-<div class="service">Interior Window Cleaning</div>
-
-<div class="service">Oven, Fridge & Cabinet Add-Ons</div>
+<div class="service">
+Post-Construction & New Build Cleaning
 </div>
+
+<div class="service">
+Office & Commercial Cleaning
+</div>
+
+<div class="service">
+Post-Renovation Cleaning
+</div>
+
+<div class="service">
+Recurring House Cleaning (Weekly, Bi-Weekly, Monthly)
+</div>
+
+<div class="service">
+Deep Cleaning & First-Time Cleans
+</div>
+
+<div class="service">
+Move-In / Move-Out Cleaning
+</div>
+
+<div class="service">
+Vacation Rental Turnovers (Airbnb / VRBO)
+</div>
+
+<div class="service">
+Pre-Sale Cleaning
+</div>
+
+<div class="service">
+Spring / Seasonal Cleaning
+</div>
+
+<div class="service">
+Post-Party / Event Cleaning
+</div>
+
+<div class="service">
+Restaurant Deep Cleaning
+</div>
+
+<div class="service">
+Interior Window Cleaning
+</div>
+
+<div class="service">
+Oven, Fridge & Cabinet Add-Ons
+</div>
+
+</div>
+
 </section>
 
+<!-- PRICING -->
+
 <section class="section">
+
 <h2>Pricing</h2>
 
 <div class="pricing">
@@ -273,63 +512,157 @@ Text Now
 <p style="text-align:center;margin-top:25px;color:#555;">
 All quotes are free. We respond fast.
 </p>
+
 </section>
 
+<!-- WHY CHOOSE US -->
+
 <section class="section">
+
 <h2>Why Choose I-5 Cleaning</h2>
 
 <div class="why">
 
 <div>
-<strong>Same Crew Every Visit</strong><br>
+<strong>Same Crew Every Visit</strong><br><br>
 No strangers through your door. Familiar faces who know your home and your standards.
 </div>
 
 <div>
-<strong>Licensed, Bonded & Insured</strong><br>
+<strong>Licensed, Bonded & Insured</strong><br><br>
 Full protection for you and your home — every single time.
 </div>
 
 <div>
-<strong>We Show Up</strong><br>
-On time, every time. And if something isn’t right we come back and fix it — no questions asked.
+<strong>We Show Up</strong><br><br>
+On time, every time. And if something isn’t right, we come back and fix it.
 </div>
 
 <div>
-<strong>Locally Owned</strong><br>
-Not a franchise. Not a call center. You get us directly — a real local business that actually cares.
+<strong>Locally Owned</strong><br><br>
+Not a franchise. Not a call center. You get a real local team that actually cares.
 </div>
 
 </div>
+
 </section>
 
+<!-- ABOUT -->
+
 <section class="section">
+
 <h2>About I-5 Cleaning</h2>
 
-<p>
-I-5 Cleaning is a locally owned and operated cleaning company based right here in Longview. We provide reliable, detail-focused cleaning services for homes, rentals, offices, and commercial spaces throughout the surrounding areas.
+<p style="margin-bottom:25px;">
+
+I-5 Cleaning is a locally owned and operated cleaning company based right here in Longview, Washington. We proudly serve Longview, Kelso, Castle Rock, Woodland, Kalama, and the surrounding Cowlitz County area.
+
 </p>
+
+<p style="margin-bottom:25px;">
+
+The company was started by owner Gunner Skolrud, a lifelong Cowlitz County local with years of hands-on experience across the trades — including industrial scaffolding, residential and commercial roofing, pipe work, and union carpentry through Local 503.
+
+</p>
+
+<p style="margin-bottom:25px;">
+
+That construction background means we understand jobsites and homes from the ground up. We know the difference between “cleaned” and truly clean, and we treat every space — whether it’s a family home, a vacation rental, an office, or a brand-new build — with the same attention to detail.
+
+</p>
+
+<p style="margin-bottom:25px;">
+
+We built I-5 Cleaning around three things: showing up when we say we will, doing the work right the first time, and treating every space like our own.
+
+</p>
+
+<p style="margin-bottom:25px;">
+
+You won’t get a different crew every visit, you won’t get a call center, and you won’t get a runaround. You get a small, local, owner-run team that takes pride in the work.
+
+</p>
+
+<p>
+
+We provide residential and commercial cleaning for homeowners, property managers, real estate agents, vacation rental hosts, general contractors, restaurants, and small businesses. From recurring weekly cleans to post-construction final walkthroughs, we bring the same standard to every job.
+
+</p>
+
 </section>
+
+<!-- CONTACT FORM -->
+
+<section class="section" id="quote-form">
+
+<h2>Get a Fast Quote</h2>
+
+<form class="contact-form"
+action="https://formsubmit.co/Gunner@I5Cleaning.com"
+method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="tel" name="phone" placeholder="Phone Number" required>
+
+<input type="email" name="email" placeholder="Email Address">
+
+<textarea name="message" placeholder="Tell us about your cleaning project"></textarea>
+
+<input type="hidden" name="_captcha" value="false">
+
+<button type="submit">
+Request Quote
+</button>
+
+</form>
+
+</section>
+
+<!-- CONTACT -->
 
 <section class="section">
+
 <h2>Contact</h2>
 
-<p>
-<strong>Call:</strong>
-<a href="tel:13608228539">(360) 822-8539</a>
-<br><br>
+<div class="contact-box">
 
-<strong>Email:</strong>
-<a href="mailto:Gunner@I5Cleaning.com">Gunner@I5Cleaning.com</a>
+<a href="tel:13608228539" class="contact-phone">
+(360) 822-8539
+</a>
+
+<p style="margin-bottom:20px;">
+
+<strong>Email:</strong><br>
+<a href="mailto:Gunner@I5Cleaning.com">
+Gunner@I5Cleaning.com
+</a>
+
 </p>
+
+<p>
+Longview, Washington
+</p>
+
+</div>
+
 </section>
 
+<!-- FOOTER -->
+
 <footer>
+
 <p>© 2026 I-5 Cleaning</p>
-<p>Clean Spaces. High Standards.</p>
+
+<p style="margin-top:8px;">
+Clean Spaces. High Standards.
+</p>
+
 </footer>
 
-<a href="sms:13608463327?body=Hi%2C%20I%E2%80%99m%20interested%20in%20your%20cleaning%20services%20and%20would%20like%20a%20quote." class="text-btn">
+<!-- FLOATING BUTTON -->
+
+<a href="sms:13608228539?body=Hi%2C%20I%E2%80%99m%20interested%20in%20your%20cleaning%20services%20and%20would%20like%20a%20quote." class="text-btn">
 Text Now
 </a>
 
